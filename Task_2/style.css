@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+ul.menubar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 7.5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo img {
+    width: 55px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-section {
+    background: url('/Internship-project/Images/Background-img.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 70px;
+}
+
+.hero-section .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.about-section,
+.services-section,
+.contact-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-section .service {
+    margin: 20px 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin: 10px 3px 5px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo img {
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .about-section,
+    .services-section,
+    .contact-section {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .about-section,
+    .services-section,
+    .contact-section {
+        padding: 20px;
+    }
+}
